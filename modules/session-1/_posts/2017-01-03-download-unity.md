@@ -8,7 +8,7 @@ jotted: false
 
 Unity uses centralized software called the Unity Hub, allowing users to install different versions of Unity on the same machine.  The Unity Hub allows you to support today's projects from today as well as ones in the future or even previous projects.
 
-1. First go to Unity [Unity](http://unity3d.com/unity/){target="_blank"}
+1. First go to Unity <a href="http://unity3d.com/unity/" target="_blank">Unity Download</a>
 2. Next, Click on **Get Started**
 3. Click on **Get Started**.
 4. Click the **Individual Tab**.

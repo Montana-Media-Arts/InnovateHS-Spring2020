@@ -1,8 +1,4 @@
----
-layout: base
----
-
-{% if page.jotted %}
+--- layout: base --- {% if page.jotted %}
 
 <script src="{{site.baseurl}}/libs/browserCheck.js"></script>
 
@@ -13,13 +9,8 @@ layout: base
 <script src="{{site.baseurl}}/libs/jotted/jotted.js"></script>
 
 
-{% endif %}
-
-
-{% assign module=page.categories[1] %}
-
-{% if page.module %}
-<div class="container-fluid bg-compliment-1 p-3">
+{% endif %} {% assign module=page.categories[1] %} {% if page.module %}
+<!--<div class="container-fluid bg-compliment-1 p-3">
     <div class="pagination-section title due-date d-flex justify-content-center" >
         <div class="active-week px-3">
             WEEK: {{ page.module }}
@@ -34,12 +25,10 @@ layout: base
 
 
     </div>
-</div>
+</div>-->
 {% endif %}
 
-<hr class="bg-primary m-0 pb-1">
-
-{% if page.module %}
+<hr class="bg-primary m-0 pb-1"> {% if page.module %}
 <div class="container-fluid modNav-top px-0">
     {% include module_nav.html %}
 </div>
@@ -47,56 +36,54 @@ layout: base
 
 <div class="container-fluid px-md-0">
 
-      <div class="row justify-content-md-center">
+    <div class="row justify-content-md-center">
 
         <div class="col-sm-12 col-md-11 col-lg-9 content">
 
-			{{ content }}
+            {{ content }}
 
 
-		</div> <!--End Content-Main -->
-	</div> <!--End row -->
-</div> <!--End container -->
+        </div>
+        <!--End Content-Main -->
+    </div>
+    <!--End row -->
+</div>
+<!--End container -->
 
 
 
 <div class="container-fluid pb-3" style="padding-top:4em;">
 
-      <div class="row justify-content-md-center">
+    <div class="row justify-content-md-center">
 
-		  <div class="col-sm-12 col-md-6">
+        <div class="col-sm-12 col-md-6">
 
-			  {% include next_in_module.html %}
-			  {% if prev or next %}
-			  <hr class="final-horizontal-ruler" />
-			  {% endif %}
+            {% include next_in_module.html %} {% if prev or next %}
+            <hr class="final-horizontal-ruler" /> {% endif %}
 
-			  <div class="row">
+            <div class="row">
 
-				  <div class="col-sm-12 col-md-6">
-					  {% if prev %}
-				  	  <div class="section-nav-title">
-						  Previous section:
-					  </div>
-					  <a rel="prev" class="prev" href="{{ site.baseurl }}{{ prev.url }}">
-						  {{ prev.title }} </a>
-					  {% endif %}
-				  </div>
+                <div class="col-sm-12 col-md-6">
+                    {% if prev %}
+                    <div class="section-nav-title">
+                        Previous section:
+                    </div>
+                    <a rel="prev" class="prev" href="{{ site.baseurl }}{{ prev.url }}">
+						  {{ prev.title }} </a> {% endif %}
+                </div>
 
-				  <div class="col-sm-12 col-md-6 text-md-right">
-					  {% if next %}
-						  <div class="section-nav-title">
-							  Next section:
-						  </div>
-						  <a rel="next" class="next" href="{{ site.baseurl }}{{ next.url }}"> {{ next.title }}
-						  </a>
-
-					  {% endif %}
-				  </div>
-			  </div>
-		  </div>
-	  </div>
-	</div>
+                <div class="col-sm-12 col-md-6 text-md-right">
+                    {% if next %}
+                    <div class="section-nav-title">
+                        Next section:
+                    </div>
+                    <a rel="next" class="next" href="{{ site.baseurl }}{{ next.url }}"> {{ next.title }}
+						  </a> {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 
 <div class="container-fluid modNav-bottom px-0">

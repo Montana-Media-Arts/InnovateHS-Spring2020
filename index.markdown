@@ -16,6 +16,6 @@ This module is delivered by [Michael Cassens]({{ site.baseurl }}/instructors/ ).
 
 If you need to get back to the Unity module, choose the "Modules" tab up above in the navigation bar (or in the "hamburger" menu if you are on a mobile device).
 
-There you should find a link to '[Unity]({{site.baseurl}}/modules/week-1/welcome/)'.
+There you should find a link to '[Unity]({{site.baseurl}}/modules/session-1/welcome/)'.
 
 <!-- <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xE7-fWrOkaQ" frameborder="0" allowfullscreen></iframe></div> -->

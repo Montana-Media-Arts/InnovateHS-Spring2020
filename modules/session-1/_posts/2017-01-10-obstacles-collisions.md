@@ -6,7 +6,7 @@ jotted: false
 
 # Obstacles
 
-I know obstacles and collisions may not have been your favorite so far, but Unity makes it easy to do both!
+Unity makes it easy to add both obstacles and collision detections!
 
 You know how to add objects to the scene now.  Go ahead and add something new to the scene into which the ship can collide.
 
